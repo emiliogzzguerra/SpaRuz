@@ -16,14 +16,6 @@ gulp.task('sass', function() {
     .pipe(gulp.dest(config.assetsDir + '/css'));
 });
 
-// // Compile sass into CSS & auto-inject into browsers
-// gulp.task('sass', function() {
-//     return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss','assets/scss/*.scss'])
-//         .pipe(sass())
-//         .pipe(gulp.dest("assets/css"))
-//         .pipe(browserSync.stream());
-// });
-
 // Move the javascript files into our /src/js folder
 gulp.task('js', function() {
     return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/tether/dist/js/tether.min.js'])
