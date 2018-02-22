@@ -1,0 +1,26 @@
+{
+  "name": "spa-ruz-frontend",
+  "homepage": "https://github.com/emiliogzzguerra/SpaRuz",
+  "authors": [
+    "emiliogzzguerra <emiliogzz24@gmail.com>"
+  ],
+  "description": "El spa con mayor variedad de Monterrey!",
+  "main": "",
+  "keywords": [
+    "spa",
+    "facial",
+    "monterrey",
+    "masaje"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
