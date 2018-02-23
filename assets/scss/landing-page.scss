@@ -9,7 +9,7 @@ $a-tags: 'a';
   right: 0;
   top: 0;
   z-index: 1000;
-  
+
   &.is-hidden {
     opacity: 0;
     -webkit-transform: translate(0,-60px);
@@ -58,4 +58,35 @@ $a-tags: 'a';
 
   /* Support for IE. */
   font-feature-settings: 'liga';
+}
+
+/* ------------------------------------------------ */
+/*                   RESPONSIVITY                   */
+/* ------------------------------------------------ */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  .carousel-item {
+    height: 200px;
+  }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
 }
