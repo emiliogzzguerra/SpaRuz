@@ -3,6 +3,7 @@ var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 
 var config = {
+    materialDesignIconsDir: './node_modules/material-design-icons',
     bootstrapDir: './node_modules/bootstrap',
     assetsDir: './assets',
 };
@@ -16,6 +17,13 @@ gulp.task('sass', function() {
     .pipe(gulp.dest(config.assetsDir + '/css'));
 });
 
+// Move css files to our directory
+gulp.task('fonts', function() {
+    return gulp.src(config.materialDesignIconsDir + '/iconfont/MaterialIcons-Regular*')
+        .pipe(gulp.dest(config.assetsDir + '/fonts/MaterialDesignIcons'))
+        .pipe(browserSync.stream());
+});
+
 // Move the javascript files into our /src/js folder
 gulp.task('js', function() {
     return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/tether/dist/js/tether.min.js'])
@@ -27,11 +35,11 @@ gulp.task('js', function() {
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
-        server: "./"  
+        server: "./"
     });
 
     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'assets/scss/*.scss'], ['sass']);
     gulp.watch("*.html").on('change', browserSync.reload);
 });
 
-gulp.task('default', ['sass','js', 'serve']);
+gulp.task('default', ['sass','js','fonts','serve']);
