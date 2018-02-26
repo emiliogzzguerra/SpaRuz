@@ -6037,11 +6037,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 /* ------------------------------------------------ */
 /*                   RESPONSIVITY                   */
 /* ------------------------------------------------ */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 header {
   margin-bottom: 3.4em; }
 
@@ -6066,15 +6061,16 @@ section {
   flex: 1; }
 
 .promo {
-  border: 1px solid #fff;
   width: 100%; }
   .promo.principal {
-    background-color: #0275d8;
     height: 60%; }
   .promo.secundaria {
     display: flex;
     flex-direction: row;
     height: 40%; }
+  .promo img {
+    width: 100%;
+    height: 100%; }
 
 .secundaria-uno,
 .secundaria-dos {
@@ -6083,6 +6079,7 @@ section {
   background-color: #d9534f; }
 
 .nuestras-especialidades {
+  background-color: #fff;
   text-align: center;
   height: 500px;
   display: flex;
