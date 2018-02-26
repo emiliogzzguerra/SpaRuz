@@ -4,13 +4,14 @@ var sass        = require('gulp-sass');
 
 var config = {
     materialDesignIconsDir: './node_modules/material-design-icons',
+    alomDir: './dependencies/alom',
     bootstrapDir: './node_modules/bootstrap',
     assetsDir: './assets',
 };
 
 //Setup for customization
 gulp.task('sass', function() {
-    return gulp.src(config.assetsDir + '/scss/landing-page.scss')
+    return gulp.src([config.assetsDir + '/scss/landing-page.scss', config.alomDir + '/scss/base.scss'] )
     .pipe(sass({
         includePaths: [config.bootstrapDir + '/scss'],
     }))
@@ -31,15 +32,10 @@ gulp.task('js', function() {
         .pipe(browserSync.stream());
 });
 
+
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
-
-    browserSync.init({
-        server: "./"
-    });
-
     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'assets/scss/*.scss'], ['sass']);
-    gulp.watch("*.html").on('change', browserSync.reload);
 });
 
 gulp.task('default', ['sass','js','fonts','serve']);
