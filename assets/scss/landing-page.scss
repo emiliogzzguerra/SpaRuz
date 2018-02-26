@@ -121,12 +121,61 @@ section {
   background-color: $red;
 }
 
-.especialidades{
-  height: 300px;
+.nuestras-especialidades{
+  text-align: center;
+  h1 {
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    font-size: 1.5em;
+  }
+  height: 500px;
   display:flex;
   flex-direction: column;
-  background-color: $green;
+  justify-content: flex-start;
+  align-items: center;
   flex:1;
+}
+
+.especialidades{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.especialidad {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  h2 {
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  width: 45%;
+  height: 48%;
+  background-color: $white;
+  &.facial {
+    background-image: url(../img/facial.jpg);
+    background-position: 50% 50%;
+  }
+  &.corporal {
+    background-image: url(../img/facial.jpg);
+    background-position: 50% 50%;
+  }
+  &.alternativo {
+    background-image: url(../img/facial.jpg);
+    background-position: 50% 50%;
+  }
+  &.terapia {
+    background-image: url(../img/facial.jpg);
+    background-position: 50% 50%;
+  }
+}
+
+.titulo-especialidad {
+  background-color: $white;
 }
 
 .map{
