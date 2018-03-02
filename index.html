@@ -7,7 +7,6 @@
   <meta name="author" content="Emilio Gonzalez">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="assets/css/landing-page.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/base.css">
   <link rel="stylesheet" type="text/css" href="assets/css/material-icons.min.css">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,22 +16,53 @@
 <body>
   <header>
       <nav
-      class="navbar navbar-toggleable-md navbar-inverse bg-inverse is-hidden"
+      class="navbar navbar-toggleable navbar-inverse bg-inverse is-hidden"
       data-nav-status="toggle">
         <button class="navbar-toggler navbar-toggler-right" type="button"
         data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="./">Spa Ruz</a>
-        <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavDropdown">
+        <a class="" href="./">Spa Ruz</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav align-items-center">
+            <li class="nav-item is-visible" data-nav-status='extraMenuItems'>
+                <a class="nav-link" style="display: inline-flex; vertical-align: middle;"href="#">
+                  Faciales
+                </a>
+            </li>
+            <div class="divide is-visible" data-toggle='division'></div>
+            <li class="nav-item is-visible" data-nav-status='extraMenuItems'>
+                <a class="nav-link" style="display: inline-flex; vertical-align: middle;"href="#">
+                  Corporales
+                </a>
+            </li>
+            <div class="divide is-visible" data-toggle='division'></div>
+            <li class="nav-item is-visible" data-nav-status='extraMenuItems'>
+                <a class="nav-link" style="display: inline-flex; vertical-align: middle;"href="#">
+                  Terapia Física
+                </a>
+            </li>
+            <div class="divide is-visible" data-toggle='division'></div>
+            <li class="nav-item is-visible" data-nav-status='extraMenuItems'>
+                <a class="nav-link" style="display: inline-flex; vertical-align: middle;"href="#">
+                  Tratamientos Alternativos
+                </a>
+            </li>
+            <div class="divide is-visible" data-toggle='division'></div>
+            <li class="nav-item is-visible" data-nav-status='extraMenuItems'>
+                <a class="nav-link" style="display: inline-flex; vertical-align: middle;"href="#">
+                  Ofertas y Productos
+                </a>
+            </li>
+            <div class="divide is-visible" data-toggle='division'></div>
             <li class="nav-item">
                 <a class="nav-link" style="display: inline-flex; vertical-align: middle;"href="#">
                   <i class="material-icons" style="margin-right:10px;">phone</i>
                   8112886677
                 </a>
             </li>
-            <li class="nav-item" style="margin-left:10px;">
+            <div class="divide is-visible" data-toggle='division'></div>
+            <li class="nav-item agendar">
               <a href="https://calendly.com/sparuz/agenda">
                 <button name="agendar-cita" role="button" class="btn btn-sm btn-success">Agendar una cita</button>
               </a>
@@ -47,33 +77,32 @@
       <div class="logo">
 
       </div>
-      <div class="main-menu">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./">
-              <i class="material-icons">home</i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#!">Faciales</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#!">Corporales</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#!">Terapia Física</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#!">Tratamientos Alternativos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#!">Agendar una cita</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#!">Ofertas y productos</a>
-          </li>
-        </ul>
-      </div>
+
+      <ul class="nav main-menu">
+        <li class="nav-item">
+          <a class="nav-link" href="./">
+            <i class="material-icons">home</i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">Faciales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">Corporales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">Terapia Física</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">Tratamientos Alternativos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">Agendar una cita</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">Ofertas y productos</a>
+        </li>
+      </ul>
     </section>
 
     <section id="promos" class="promos">

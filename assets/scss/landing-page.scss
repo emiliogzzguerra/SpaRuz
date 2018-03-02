@@ -11,6 +11,10 @@
   right: 0;
   top: 0;
   z-index: 1000;
+  padding: 8px 16px;
+
+  display:flex;
+  flex-direction: row;
 
   &.is-hidden {
     @extend %hide;
@@ -23,6 +27,37 @@
     -webkit-transform: translate(0,0);
     -webkit-transition: -webkit-transform .2s,background .3s,color .3s;
   }
+}
+
+.is-hidden {
+  @extend %hide;
+  -webkit-transform: translate(0,-60px);
+  -webkit-transition: -webkit-transform .2s,background .3s,color .3s,opacity 0 .3s;
+  border-style: none;
+}
+
+.is-visible {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  -webkit-transition: -webkit-transform .2s,background .3s,color .3s;
+  border-style: solid;
+}
+
+.navbar-nav>li{
+  margin: 0.5em 0em;
+}
+
+.nav-link {
+  padding: 0 0;
+}
+
+.divide{
+  width: 95%;
+  border-top: 1px solid #f6f6f6;
+}
+
+.agendar {
+  margin-top: 0.2em;
 }
 
 @font-face {
@@ -63,10 +98,8 @@
 }
 
 /* ------------------------------------------------ */
-/*                   RESPONSIVITY                   */
+/*                   Mobile                         */
 /* ------------------------------------------------ */
-
-
 
 header{
   margin-bottom:3.4em;
@@ -117,7 +150,6 @@ section {
 .secundaria-dos{
   width: 100%;
   height: 100%;
-  background-color: $red;
 }
 
 .nuestras-especialidades{
@@ -232,32 +264,115 @@ footer {
   flex:0;
 }
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
+/* ------------------------------------------------ */
+/*                   Responsivity                   */
+/* ------------------------------------------------ */
 
-}
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
 
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 16px;
+  }
+
+  header {
+    margin-bottom: 0px;
+  }
+
+  body{
+    height: 100%;
+  }
+
   .menu {
     display:flex;
     flex-direction: column;
-    margin-top: 3.5em;
-    background-color: $red;
+    justify-content: center;
   }
 
   .logo {
     width: 200px;
     height: 200px;
-    background-color: $red;
+  }
+
+  .nav-link {
+    padding: 0em 0.5em;
   }
 
   .main-menu {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1em;
+  }
+
+  .main-menu > * {
+    display: flex;
+    align-items:center;
+    text-align: center;
+  }
+
+  .especialidades{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
 
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .promos{
+    height: 700px;
+  }
+
+  .principal {
+    height: 55%
+  }
+  .secundaria{
+    height: 45%
+  }
+
+  .main-menu {
+    width: 70%;
+  }
+
+  .nuestras-especialidades {
+    height: 400px;
+  }
+
+  .especialidades{
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .especialidad{
+    height: 350px;
+    margin: 0px 20px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .promos{
+    height: 600px;
+  }
+  .principal {
+    height: 55%
+  }
+  .secundaria{
+    height: 45%
+  }
+
 
 }

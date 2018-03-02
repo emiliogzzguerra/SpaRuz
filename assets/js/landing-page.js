@@ -1,9 +1,11 @@
 $(document).ready(function(){
   $(window).resize(function(event) {
-    if($(window).width() > 991){
+    if($(window).width() > 576){
       hideNav();
+      hideMenuItems();
     } else {
       showNav();
+      showMenuItems();
     }
   });
 
@@ -15,6 +17,16 @@ $(document).ready(function(){
   function showNav() {
     $("[data-nav-status='toggle']").removeClass("is-hidden").addClass("is-visible");
   }
+
+  function hideMenuItems() {
+    $("[data-nav-status='extraMenuItems']").removeClass("is-visible").addClass("is-hidden").css("margin", "0em 0em");
+    $("[data-toggle='division']").removeClass("is-visible").addClass("is-hidden");
+  };
+
+  function showMenuItems() {
+    $("[data-nav-status='extraMenuItems']").removeClass("is-hidden").addClass("is-visible").css("margin", "0.5em 0em");
+    $("[data-toggle='division']").removeClass("is-hidden").addClass("is-visible");
+  };
 
   function initMap() {
     var locationSpa = {lat: 25.645351, lng: -100.282992};
@@ -33,7 +45,9 @@ $(document).ready(function(){
   initMap();
 
   function hideAndShow(){
-    if($(window).width() > 991){
+    if($(window).width() > 576){
+      hideMenuItems();
+
       /** ===========================================
           Hide / show the master navigation menu
       ============================================ */
@@ -57,5 +71,5 @@ $(document).ready(function(){
     } else {
       showNav();
     }
-  }
+  };
 });
