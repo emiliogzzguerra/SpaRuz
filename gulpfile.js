@@ -11,7 +11,7 @@ var config = {
 
 //Setup for customization
 gulp.task('sass', function() {
-    return gulp.src([config.assetsDir + '/scss/landing-page.scss', config.alomDir + '/scss/base.scss'] )
+    return gulp.src([config.assetsDir + '/scss/*.scss'] )
     .pipe(sass({
         includePaths: [config.bootstrapDir + '/scss'],
     }))

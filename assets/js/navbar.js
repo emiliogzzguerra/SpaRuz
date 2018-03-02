@@ -3,13 +3,20 @@ $(document).ready(function(){
     if($(window).width() > 576){
       hideNav();
       hideMenuItems();
+      hideAndShow();
     } else {
-      showNav();
       showMenuItems();
+      showNav();
     }
   });
 
-  hideAndShow();
+  if($(window).width() > 576){
+    hideNav();
+    hideMenuItems();
+    hideAndShow();
+  } else {
+    showNav();
+  }
 
   function hideNav() {
     $("[data-nav-status='toggle']").removeClass("is-visible").addClass("is-hidden");
@@ -28,26 +35,8 @@ $(document).ready(function(){
     $("[data-toggle='division']").removeClass("is-hidden").addClass("is-visible");
   };
 
-  function initMap() {
-    var locationSpa = {lat: 25.645351, lng: -100.282992};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 15,
-      center: locationSpa,
-      gestureHandling: 'none'
-    });
-    var marker = new google.maps.Marker({
-      position: locationSpa,
-      map: map,
-      title: 'Spa Ruz!'
-    });
-  }
-
-  initMap();
-
   function hideAndShow(){
     if($(window).width() > 576){
-      hideMenuItems();
-
       /** ===========================================
           Hide / show the master navigation menu
       ============================================ */
@@ -68,8 +57,6 @@ $(document).ready(function(){
           }
         }
       });
-    } else {
-      showNav();
     }
   };
 });

@@ -5987,126 +5987,40 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
-/* ------------------------------------------------ */
-/*                   Mobile                         */
-/* ------------------------------------------------ */
-main {
-  display: flex;
-  flex-direction: column; }
-
-.promos {
-  height: 500px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  flex: 1; }
-
-.promo {
-  width: 100%; }
-  .promo.principal {
-    height: 60%; }
-  .promo.secundaria {
-    display: flex;
-    flex-direction: row;
-    height: 40%; }
-  .promo img {
-    width: 100%;
-    height: 100%; }
-
-.secundaria-uno,
-.secundaria-dos {
-  width: 100%;
-  height: 100%; }
-
-.nuestras-especialidades {
-  background-color: #fff;
-  text-align: center;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex: 1; }
-  .nuestras-especialidades h1 {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    font-size: 1.5em; }
-
-.especialidades {
+.servicios {
+  margin-top: 4.2em;
+  margin-bottom: 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 100%; }
+  width: 100%;
+  text-align: center; }
+  .servicios h1 {
+    margin-bottom: 0.5em; }
 
-.especialidad {
+.servicio {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   width: 45%;
-  height: 48%;
-  background-color: #fff; }
-  .especialidad h2 {
+  height: 50%;
+  margin-bottom: 0.5em; }
+  .servicio h2 {
     font-size: 1em;
     margin-top: 0.5em;
-    margin-bottom: 0.5em; }
-  .especialidad.facial {
-    background-image: url(../img/facial.jpg);
-    background-position: 50% 50%; }
-  .especialidad.corporal {
-    background-image: url(../img/facial.jpg);
-    background-position: 50% 50%; }
-  .especialidad.alternativo {
-    background-image: url(../img/facial.jpg);
-    background-position: 50% 50%; }
-  .especialidad.terapia {
-    background-image: url(../img/facial.jpg);
-    background-position: 50% 50%; }
+    background-color: #fff; }
+  .servicio img {
+    height: 100%;
+    width: 100%; }
 
-.titulo-especialidad {
-  background-color: #fff; }
+.subdivision h2 {
+  margin-left: 1em; }
 
-.map {
-  height: 300px;
+.card {
+  margin: 0.5em 1em; }
+
+.card-header {
   display: flex;
-  flex-direction: column;
-  flex: 1; }
-
-/* ------------------------------------------------ */
-/*                   Responsivity                   */
-/* ------------------------------------------------ */
-@media (min-width: 576px) {
-  header {
-    margin-bottom: 0px; }
-  body {
-    height: 100%; }
-  .especialidades {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%; } }
-
-@media (min-width: 992px) {
-  .promos {
-    height: 700px; }
-  .principal {
-    height: 55%; }
-  .secundaria {
-    height: 45%; }
-  .nuestras-especialidades {
-    height: 400px; }
-  .especialidades {
-    flex-wrap: nowrap;
-    align-items: center; }
-  .especialidad {
-    height: 350px;
-    margin: 0px 20px; } }
-
-@media (min-width: 1200px) {
-  .promos {
-    height: 600px; }
-  .principal {
-    height: 55%; }
-  .secundaria {
-    height: 45%; } }
+  flex-direction: row;
+  justify-content: space-between; }

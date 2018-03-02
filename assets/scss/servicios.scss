@@ -1,0 +1,72 @@
+@import "variables";
+@import "bootstrap";
+
+.servicios{
+  margin-top: 4.2em;
+  margin-bottom: 1em;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 0.5em;
+  }
+}
+
+.servicio {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  h2 {
+    font-size: 1em;
+    margin-top: 0.5em;
+    background-color: $white;
+  }
+  width: 45%;
+  height: 50%;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  margin-bottom: 0.5em;
+}
+
+.subdivision {
+  h2 {
+    margin-left: 1em;
+  }
+}
+
+.card {
+  margin: 0.5em 1em;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
