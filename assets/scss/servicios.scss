@@ -49,7 +49,42 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  .arrow {
+    font-size: 2em !important;
+  }
+  h4{
+    margin-bottom: 0;
+  }
 }
+
+.tratamiento{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1em;
+  h5{
+    margin-top: 1em;
+  }
+  img {
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 200px;
+  }
+}
+
+.detalles{
+  margin: 1em 0;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
