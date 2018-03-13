@@ -6084,7 +6084,7 @@ main {
     display: flex;
     justify-content: center; }
     .menu img {
-      width: 30%;
+      width: 60%;
       height: 30%; }
   .especialidades {
     display: flex;
@@ -6093,7 +6093,15 @@ main {
     flex-wrap: wrap;
     width: 100%; } }
 
+@media (min-width: 768px) {
+  .menu img {
+    width: 40%;
+    height: 30%; } }
+
 @media (min-width: 992px) {
+  .menu img {
+    width: 30%;
+    height: 30%; }
   .promos {
     height: 700px; }
   .principal {
