@@ -6105,8 +6105,7 @@ main {
 
 @media (min-width: 1200px) {
   .promos {
-    height: 600px; }
-  .principal {
-    height: 55%; }
-  .secundaria {
-    height: 45%; } }
+    flex-direction: row; }
+  .promosecundaria {
+    flex-direction: row;
+    flex-wrap: wrap; } }

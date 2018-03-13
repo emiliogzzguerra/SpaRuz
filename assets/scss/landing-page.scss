@@ -167,13 +167,15 @@ main {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+
   .promos{
-    height: 600px;
+    flex-direction: row;
   }
-  .principal {
-    height: 55%
+  .promo{
+    &secundaria{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
-  .secundaria{
-    height: 45%
-  }
+
 }
