@@ -6080,6 +6080,12 @@ main {
     margin-bottom: 0px; }
   body {
     height: 100%; }
+  .menu {
+    display: flex;
+    justify-content: center; }
+    .menu img {
+      width: 30%;
+      height: 30%; }
   .especialidades {
     display: flex;
     flex-direction: row;
@@ -6105,7 +6111,16 @@ main {
 
 @media (min-width: 1200px) {
   .promos {
-    flex-direction: row; }
-  .promosecundaria {
     flex-direction: row;
-    flex-wrap: wrap; } }
+    height: 475px; }
+  .promo.principal {
+    height: 100%;
+    width: 150%; }
+  .promo.secundaria {
+    background-color: red;
+    flex-direction: column;
+    height: 100%; }
+  .secundaria-uno,
+  .secundaria-dos {
+    width: 100%;
+    height: 50%; } }

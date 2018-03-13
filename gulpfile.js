@@ -32,10 +32,23 @@ gulp.task('js', function() {
         .pipe(browserSync.stream());
 });
 
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: './'
+    },
+  })
+})
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
-    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'assets/scss/*.scss'], ['sass']);
+gulp.task('serve', ['browserSync','sass'], function() {
+    gulp.watch('./assets/scss/*.scss', ['sass']);
+    gulp.watch('./assets/scss/*.scss', browserSync.reload);
+
+    // Reloads the browser whenever HTML or JS files change
+    gulp.watch('./*.html', browserSync.reload);
+    gulp.watch('./assets/js/**/*.js', browserSync.reload);
+
 });
 
 gulp.task('default', ['sass','js','fonts','serve']);

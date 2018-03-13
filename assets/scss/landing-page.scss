@@ -124,6 +124,15 @@ main {
     height: 100%;
   }
 
+  .menu{
+    display: flex;
+    justify-content: center;
+    img{
+      width: 30%;
+      height: 30%;
+    }
+  }
+
   .especialidades{
     display:flex;
     flex-direction: row;
@@ -170,12 +179,25 @@ main {
 
   .promos{
     flex-direction: row;
+    height: 475px;
   }
   .promo{
-    &secundaria{
-      flex-direction: row;
-      flex-wrap: wrap;
+
+    &.principal{
+      height: 100%;
+      width: 150%
     }
+    &.secundaria{
+      background-color: red;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  .secundaria-uno,
+  .secundaria-dos{
+    width: 100%;
+    height: 50%;
   }
 
 }
