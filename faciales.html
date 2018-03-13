@@ -71,25 +71,25 @@
       <div class="servicios">
         <h1>Servicios Faciales</h1>
         <div class="servicio limpieza">
-          <a href="#limpieza">
+          <a class="subdivision" href="#limpieza">
             <img src="assets/img/face.jpg" alt="limpieza" class="rounded-circle">
             <h2>Limpieza</h2>
-          <a>
+          </a>
         </div>
         <div class="servicio acne">
-          <a href="#acne">
+          <a class="subdivision" href="#acne">
             <img src="assets/img/face.jpg" alt="limpieza" class="rounded-circle">
             <h2>Acne</h2>
           </a>
         </div>
         <div class="servicio anti-edad">
-          <a href="#anti-edad">
+          <a class="subdivision" href="#anti-edad">
             <img src="assets/img/face.jpg" alt="limpieza" class="rounded-circle">
             <h2>Anti-Edad</h2>
           </a>
         </div>
         <div class="servicio manchas">
-          <a href="#manchas">
+          <a class="subdivision" href="#manchas">
             <img src="assets/img/face.jpg" alt="limpieza" class="rounded-circle">
             <h2>Manchas</h2>
           </a>
@@ -99,127 +99,38 @@
       <div id="limpieza" class="subdivision limpieza">
         <div id="accordion" role="tablist" aria-multiselectable="true">
           <h2>Limpieza</h2>
-          <div class="card">
-            <a role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              <div class="card-header">
-                <h4>
-                  Tratamiento 1
-                </h4>
-                <i class="material-icons arrow">keyboard_arrow_down</i>
-              </div>
-            </a>
-            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-              <div class="tratamiento">
-                <img src="assets/img/face.jpg" alt="">
-                <h5>Nombre del tratamiento</h5>
-                <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                </p>
-                <div class="detalles">
-                   <div class="precio">
-                     <i class="material-icons time">access_time</i>
-                     <h6>15 minutos</h6>
-                   </div>
-                   <div class="tiempo">
-                     <i class="material-icons money">attach_money</i>
-                     <h6>200 pesos</h6>
-                   </div>
+          <ul>
+            <li class="card">
+              <div id="collapse" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                <div class="card-header">
+                  <h4>
+                    Control de grasa
+                  </h4>
+                  <i class="material-icons arrow">keyboard_arrow_up</i>
                 </div>
-                <button name="agendar-cita" role="button" class="btn btn-md btn-success">Agendar una cita</button>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <a role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <div class="card-header">
-                <h4>
-                  Tratamiento 2
-                </h4>
-                <i class="material-icons arrow">keyboard_arrow_down</i>
-              </div>
-            </a>
-            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-              <div class="tratamiento">
-                <img src="assets/img/face.jpg" alt="">
-                <h5>Nombre del tratamiento</h5>
-                <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                </p>
-                <div class="detalles">
-                   <div class="precio">
-                     <i class="material-icons time">access_time</i>
-                     <h6>15 minutos</h6>
-                   </div>
-                   <div class="tiempo">
-                     <i class="material-icons money">attach_money</i>
-                     <h6>200 pesos</h6>
-                   </div>
+                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="tratamiento">
+                    <img src="assets/img/face.jpg" alt="">
+                    <h5>Nombre del tratamiento</h5>
+                    <p>
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                    </p>
+                    <div class="detalles">
+                       <div class="precio">
+                         <i class="material-icons time">access_time</i>
+                         <h6>15 minutos</h6>
+                       </div>
+                       <div class="tiempo">
+                         <i class="material-icons money">attach_money</i>
+                         <h6>200 pesos</h6>
+                       </div>
+                    </div>
+                    <button name="agendar-cita" role="button" class="btn btn-md btn-success">Agendar una cita</button>
+                  </div>
                 </div>
-                <button name="agendar-cita" role="button" class="btn btn-md btn-success">Agendar una cita</button>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <a role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <div class="card-header">
-                <h4>
-                  Tratamiento 3
-                </h4>
-                <i class="material-icons arrow">keyboard_arrow_down</i>
-              </div>
-            </a>
-            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-              <div class="tratamiento">
-                <img src="assets/img/face.jpg" alt="">
-                <h5>Nombre del tratamiento</h5>
-                <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                </p>
-                <div class="detalles">
-                   <div class="precio">
-                     <i class="material-icons time">access_time</i>
-                     <h6>15 minutos</h6>
-                   </div>
-                   <div class="tiempo">
-                     <i class="material-icons money">attach_money</i>
-                     <h6>200 pesos</h6>
-                   </div>
-                </div>
-                <button name="agendar-cita" role="button" class="btn btn-md btn-success">Agendar una cita</button>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <a role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              <div class="card-header">
-                <h4>
-                  Tratamiento 1
-                </h4>
-                <i class="material-icons arrow">keyboard_arrow_down</i>
-              </div>
-            </a>
-            <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
-              <div class="tratamiento">
-                <img src="assets/img/face.jpg" alt="">
-                <h5>Nombre del tratamiento</h5>
-                <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                </p>
-                <div class="detalles">
-                   <div class="precio">
-                     <i class="material-icons time">access_time</i>
-                     <h6>15 minutos</h6>
-                   </div>
-                   <div class="tiempo">
-                     <i class="material-icons money">attach_money</i>
-                     <h6>200 pesos</h6>
-                   </div>
-                </div>
-                <button name="agendar-cita" role="button" class="btn btn-md btn-success">Agendar una cita</button>
-              </div>
-            </div>
-          </div>
-        </div>
+            </li>
+          </ul>
       </div>
       <div id="acne" class="subdivision acne">
         <div id="accordion" role="tablist" aria-multiselectable="true">

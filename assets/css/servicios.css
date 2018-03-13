@@ -6017,6 +6017,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .subdivision h2 {
   margin-left: 1em; }
 
+#accordion ul {
+  padding-left: 0; }
+
 .card {
   margin: 0.5em 1em; }
 
@@ -6030,6 +6033,14 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     font-size: 2em !important; }
   .card-header h4 {
     margin-bottom: 0; }
+
+#collapse.collapsed i {
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+  transition: 0.5s; }
 
 .tratamiento {
   display: flex;
