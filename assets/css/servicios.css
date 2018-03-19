@@ -5987,8 +5987,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
+.titulo_servicio {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em; }
+
 .servicios {
-  margin-top: 4.2em;
   margin-bottom: 1em;
   display: flex;
   flex-direction: row;
@@ -6015,7 +6019,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     width: 100%; }
 
 .subdivision h2 {
-  margin-left: 1em; }
+  margin-left: 0.5em; }
 
 #accordion ul {
   padding-left: 0; }

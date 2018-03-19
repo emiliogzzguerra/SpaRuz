@@ -51,13 +51,23 @@ section {
   opacity: 0;
 }
 
+
+.logo{
+  left: -8px;
+    top: -4px;
+  position: absolute;
+}
+
+.menuheight{
+  height: 32px;
+}
+
 .navbar {
   left: 0;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 1000;
-  padding: 12px 16px;
   border-style: solid;
 
   &.is-hidden {
@@ -118,6 +128,7 @@ section {
 // FOOTER //
 
 footer {
+  background-color: #CACACA;
   height: 50px;
   display:flex;
   flex-direction: row;
@@ -126,6 +137,10 @@ footer {
   img{
     width: 3em;
     height: 3em;
+  }
+  p{
+    font-size: 0.9em;
+    margin: 0 0 0 0;
   }
 }
 
@@ -143,19 +158,12 @@ footer {
   align-items: center;
   justify-content: flex-end;
 
-  p{
-    font-size: 0.8em;
-    margin-bottom: 0px;
-    margin-right: 10px;
-  }
-
   img {
     display:border-box;
     width: 2em;
     height: 2em;
-    margin-right: 0.5em;
+    margin: 0.5em 0.5em;
   }
-  flex:4;
 }
 
 .logo-footer{
