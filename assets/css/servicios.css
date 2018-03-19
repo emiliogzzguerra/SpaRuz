@@ -6019,6 +6019,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     width: 100%; }
 
 .subdivision h2 {
+  margin-top: 0.5em;
   margin-left: 0.5em; }
 
 #accordion ul {
@@ -6067,3 +6068,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   width: 100%;
   justify-content: space-around;
   align-items: center; }
+
+.divide-servicios {
+  margin: 0 1em;
+  border-top: 1px solid #000000; }
