@@ -7,3 +7,7 @@ $('.subdivision').click(function(e){
     $('body, html').animate({scrollTop: (scrollTo)+'px'}, 1000);
   }
 });
+
+$(".card").click(function(){
+    $(this).find("i").toggleClass("down");
+});

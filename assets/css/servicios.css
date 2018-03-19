@@ -6039,13 +6039,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .card-header h4 {
     margin-bottom: 0; }
 
-#collapse.collapsed i {
+.down {
   -ms-transform: rotate(180deg);
-  /* IE 9 */
+  -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
-  /* Chrome, Safari, Opera */
-  transform: rotate(180deg);
-  transition: 0.5s; }
+  transform: rotate(180deg); }
 
 .tratamiento {
   display: flex;
@@ -6072,3 +6070,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .divide-servicios {
   margin: 0 1em;
   border-top: 1px solid #000000; }
+
+@media (min-width: 576px) {
+  .titulo_servicio {
+    margin-top: 1em; } }
