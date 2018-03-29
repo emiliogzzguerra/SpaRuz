@@ -100,7 +100,8 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  width: 100%; }
   footer img {
     width: 3em;
     height: 3em; }
@@ -148,7 +149,6 @@ footer {
   .main-menu {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 1em; }
   .main-menu > * {
@@ -165,11 +165,13 @@ footer {
 @media (min-width: 768px) {
   .menu img {
     width: 40%;
-    height: 30%; } }
+    height: 30%; }
+  footer {
+    width: 80%; } }
 
 @media (min-width: 992px) {
   .menu img {
     width: 30%;
     height: 30%; }
   .main-menu {
-    width: 90%; } }
+    width: 80%; } }

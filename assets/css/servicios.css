@@ -6015,6 +6015,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     margin-top: 0.5em;
     background-color: #fff; }
   .servicio img {
+    max-height: 200px;
+    max-width: 200px;
     height: 100%;
     width: 100%; }
 
@@ -6073,4 +6075,143 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 @media (min-width: 576px) {
   .titulo_servicio {
-    margin-top: 1em; } }
+    margin-top: 1em; }
+  .servicio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 45%;
+    margin-bottom: 0.5em; }
+    .servicio h2 {
+      font-size: 1em;
+      margin-top: 0.5em;
+      background-color: #fff; } }
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/wood.jpg");
+    background-repeat: repeat; }
+  main {
+    margin-top: -55px;
+    background-color: white;
+    width: 80%;
+    height: 100%; }
+  ul {
+    margin: 0;
+    padding: 0; }
+  .servicios-contenido-desktop h1 {
+    margin-left: 0.6em; }
+  .servicio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 45%;
+    margin-bottom: 0.5em; }
+    .servicio h2 {
+      font-size: 1em;
+      margin-top: 0.5em;
+      background-color: #fff; }
+  .sv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em 1em;
+    padding-bottom: 0;
+    margin: 20px 20px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray; }
+    .sv.reverso {
+      flex-direction: row-reverse; }
+      .sv.reverso .details :nth-child(1) {
+        order: 2; }
+      .sv.reverso .details :nth-child(2) {
+        order: 3; }
+      .sv.reverso .details :nth-child(3) {
+        order: 1; }
+      .sv.reverso .details {
+        justify-content: flex-start; }
+        .sv.reverso .details > .agenda {
+          margin-right: 1em; }
+        .sv.reverso .details .tiempo {
+          margin-right: 1em; }
+      .sv.reverso .des {
+        margin-left: 0; }
+  .sv-img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 18%; }
+    .sv-img img {
+      min-height: 100px;
+      border-radius: 20px; }
+    .sv-img h2 {
+      text-align: center;
+      font-size: 1.2em; }
+  .sv-des {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-right: 10px; }
+  .des {
+    margin-left: 1em;
+    height: 50%; }
+    .des h2 {
+      font-size: 1.5em; }
+    .des p {
+      margin: 0; }
+  .details {
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 1em;
+    width: 100%; }
+    .details i {
+      font-size: 1.5em; }
+    .details h3 {
+      font-size: 1.2em;
+      margin: 0; }
+    .details .precio {
+      margin-right: 1em; }
+    .details .tiempo {
+      margin-right: 1em; }
+  .tiempo {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .tiempo i {
+      margin-right: 0.2em; }
+  .precio {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .agenda {
+    display: flex;
+    flex-direction: row;
+    align-items: center; } }
+
+@media (min-width: 992px) {
+  .des p {
+    font-size: 1.1em; }
+  .details {
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 1em; }
+    .details .precio {
+      margin-right: 1em; }
+    .details .tiempo {
+      margin-right: 1em; }
+    .details i {
+      font-size: 1.5em; }
+    .details h3 {
+      font-size: 1.5em;
+      margin: 0; } }

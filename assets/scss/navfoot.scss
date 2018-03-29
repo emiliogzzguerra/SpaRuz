@@ -134,6 +134,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
   img{
     width: 3em;
     height: 3em;
@@ -199,7 +200,7 @@ footer {
   .main-menu {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 1em;
   }
@@ -228,6 +229,9 @@ footer {
       height: 30%;
     }
   }
+  footer {
+    width: 80%;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -240,7 +244,7 @@ footer {
   }
 
   .main-menu {
-    width: 90%;
+    width: 80%;
   }
 }
 
