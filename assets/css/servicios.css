@@ -5989,7 +5989,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .titulo_servicio {
   text-align: center;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 1em; }
 
 .servicios {
@@ -6094,17 +6094,32 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     flex-direction: column;
     align-items: center;
     background-image: url("../img/wood.jpg");
+    background-size: 400px 400px;
+    background-attachment: fixed;
     background-repeat: repeat; }
   main {
-    margin-top: -55px;
-    background-color: white;
     width: 80%;
     height: 100%; }
-  ul {
-    margin: 0;
-    padding: 0; }
+  .titulo_servicio {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    padding: 0.5em 0; }
+  .main-menu,
+  .titulo_servicio,
+  .servicios,
+  .servicio-wrapper {
+    background-color: white; }
+    .main-menu ul,
+    .titulo_servicio ul,
+    .servicios ul,
+    .servicio-wrapper ul {
+      margin: 0;
+      padding-bottom: 1px; }
+  .servicio-wrapper {
+    margin-top: 1em; }
   .servicios-contenido-desktop h1 {
-    margin-left: 0.6em; }
+    margin-left: 0.6em;
+    padding-top: 0.4em; }
   .servicio {
     display: flex;
     flex-direction: row;
@@ -6137,7 +6152,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
         order: 1; }
       .sv.reverso .details {
         justify-content: flex-start; }
-        .sv.reverso .details > .agenda {
+        .sv.reverso .details .agenda {
           margin-right: 1em; }
         .sv.reverso .details .tiempo {
           margin-right: 1em; }
@@ -6200,6 +6215,17 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     align-items: center; } }
 
 @media (min-width: 992px) {
+  .servicios {
+    justify-content: space-around; }
+  .servicios :nth-child(4) {
+    margin-right: -6em; }
+  .servicios :nth-child(5) {
+    margin-left: -6em; }
+  .servicio {
+    width: 33%; }
+    .servicio img {
+      height: 80%;
+      width: 80%; }
   .des p {
     font-size: 1.1em; }
   .details {

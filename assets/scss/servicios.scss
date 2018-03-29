@@ -3,7 +3,7 @@
 
 .titulo_servicio{
   text-align: center;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
@@ -38,7 +38,6 @@
     max-width: 200px;
     height: 100%;
     width: 100%;
-
   }
   margin-bottom: 0.5em;
 }
@@ -142,21 +141,45 @@
     flex-direction: column;
     align-items: center;
     background-image: url("../img/wood.jpg");
+    background-size: 400px 400px;
+     background-attachment: fixed;
     background-repeat: repeat;
+
   }
   main{
-      margin-top: -55px;
-      background-color: white;
       width: 80%;
       height: 100%;
   }
-  ul{
-    margin: 0;
-    padding: 0;
+
+  .titulo_servicio{
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    padding: 0.5em 0;
   }
+
+  .main-menu,
+  .titulo_servicio,
+  .servicios,
+  .servicio-wrapper{
+    background-color: white;
+    ul{
+      margin: 0;
+      padding-bottom:1px;
+
+    }
+  }
+
+
+
+  .servicio-wrapper{
+    margin-top: 1em;
+  }
+
+
   .servicios-contenido-desktop{
     h1{
       margin-left: 0.6em;
+      padding-top: 0.4em;
     }
   }
   .servicio {
@@ -190,7 +213,7 @@
       .details :nth-child(3) { order: 1; }
       .details {
         justify-content: flex-start;
->        .agenda{
+        .agenda{
           margin-right: 1em;
         }
         .tiempo{
@@ -280,6 +303,18 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .servicios{
+    justify-content: space-around;
+  }
+  .servicios :nth-child(4) { margin-right: -6em}
+  .servicios :nth-child(5) { margin-left: -6em }
+  .servicio {
+    width: 33%;
+    img {
+      height: 80%;
+      width: 80%;
+    }
+  }
   .des{
     p{
       font-size: 1.1em;

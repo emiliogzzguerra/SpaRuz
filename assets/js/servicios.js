@@ -1,5 +1,7 @@
 if($(window).width() > 768){
   $(".servicios-contenido-movil").hide();
+} else {
+  $(".servicios-contenido-desktop").hide();
 }
 
 $('.subdivision').click(function(e){

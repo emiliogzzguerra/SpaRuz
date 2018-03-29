@@ -72,30 +72,38 @@
 
     <main>
       <section id="menu" class="menu">
-        <img src="assets/img/logo.jpg" alt="">
+        <div class="logo-wrapper">
+          <img src="assets/img/left-leafs.png" alt="">
+          <img src="assets/img/logo.jpg" alt="">
+          <img src="assets/img/right-leafs.png" alt="">
+        </div>
+
         <ul class="nav main-menu">
-          <li class="nav-item">
-            <a class="nav-link" href="./">
+          <li class="opcion-nav">
+            <a href="./">
               <i class="material-icons">home</i>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#!">Faciales</a>
+          <li class="opcion-nav active">
+            <a href="#!" >Faciales</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#!">Corporales</a>
+          <li class="opcion-nav">
+            <a href="#!">Corporales</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#!">Terapia Física</a>
+          <li class="opcion-nav">
+            <a href="#!">Terapia Física</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#!">Tratamientos Alternativos</a>
+          <li class="opcion-nav">
+            <a href="#!">Tratamientos Alternativos</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#!">Ofertas y productos</a>
+          <li class="opcion-nav">
+            <a href="#!">Ofertas y productos</a>
           </li>
         </ul>
+
       </section>
+
+
       <h1 class="titulo_servicio">Faciales</h1>
       <div class="servicios">
         <div class="servicio limpieza">
@@ -105,21 +113,27 @@
           </a>
         </div>
         <div class="servicio acne">
-          <a class="subdivision" href="#acne">
-            <img src="assets/img/face.jpg" alt="limpieza" class="rounded-circle">
-            <h2>Acne</h2>
-          </a>
-        </div>
-        <div class="servicio anti-edad">
           <a class="subdivision" href="#anti-edad">
             <img src="assets/img/face.jpg" alt="limpieza" class="rounded-circle">
             <h2>Anti-Edad</h2>
           </a>
         </div>
-        <div class="servicio manchas">
+        <div class="servicio anti-edad">
           <a class="subdivision" href="#manchas">
             <img src="assets/img/face.jpg" alt="limpieza" class="rounded-circle">
             <h2>Manchas</h2>
+          </a>
+        </div>
+        <div class="servicio manchas">
+          <a class="subdivision" href="#pies">
+            <img src="assets/img/face.jpg" alt="limpieza" class="rounded-circle">
+            <h2>Pies</h2>
+          </a>
+        </div>
+        <div class="servicio manchas">
+          <a class="subdivision" href="#depilacion">
+            <img src="assets/img/face.jpg" alt="limpieza" class="rounded-circle">
+            <h2>Depilación</h2>
           </a>
         </div>
       </div>
@@ -181,62 +195,120 @@
         </div>
       </div>
       <div class="servicios-contenido-desktop">
-        <h1>Limpieza</h1>
-        <ul>
-          <li class="sv">
-            <div class="sv-img">
-              <img srcset="assets/img/face.jpg 300w"
-                   sizes="5vw"
-                   alt="">
-            </div>
-            <div class="sv-des">
-              <div class="des">
-                <h2>Control de grasa</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a sollicitudin lorem. Proin ex sem, porttitor sed feugiat in, cursus ut mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        <div class="servicio-wrapper">
+          <h1 id="limpieza">Limpieza</h1>
+          <ul>
+            <li class="sv">
+              <div class="sv-img">
+                <img srcset="assets/img/face.jpg 300w"
+                     sizes="5vw"
+                     alt="">
               </div>
-            </div>
-            <div class="details">
-              <div class="tiempo">
-                <i class="material-icons">alarm</i>
-                <h3>20 mins</h3>
+              <div class="sv-des">
+                <div class="des">
+                  <h2>Control de grasa</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a sollicitudin lorem. Proin ex sem, porttitor sed feugiat in, cursus ut mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                </div>
               </div>
-              <div class="precio">
-                <i class="material-icons">attach_money</i>
-                <h3>200</h3>
+              <div class="details">
+                <div class="tiempo">
+                  <i class="material-icons">alarm</i>
+                  <h3>20 mins</h3>
+                </div>
+                <div class="precio">
+                  <i class="material-icons">attach_money</i>
+                  <h3>200</h3>
+                </div>
+                <div class="agenda">
+                  <button name="agendar-cita" role="button" class="btn btn-sm btn-success">Agendar una cita</button>
+                </div>
               </div>
-              <div class="agenda">
-                <button name="agendar-cita" role="button" class="btn btn-sm btn-success">Agendar una cita</button>
+            </li>
+            <li class="sv reverso">
+              <div class="sv-img">
+                <img srcset="assets/img/face.jpg 300w"
+                     sizes="5vw"
+                     alt="">
               </div>
-            </div>
-          </li>
-          <li class="sv reverso">
-            <div class="sv-img">
-              <img srcset="assets/img/face.jpg 300w"
-                   sizes="5vw"
-                   alt="">
-            </div>
-            <div class="sv-des">
-              <div class="des">
-                <h2>Control de grasa</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a sollicitudin lorem. Proin ex sem, porttitor sed feugiat in, cursus ut mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+              <div class="sv-des">
+                <div class="des">
+                  <h2>Control de grasa</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a sollicitudin lorem. Proin ex sem, porttitor sed feugiat in, cursus ut mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                </div>
               </div>
-            </div>
-            <div class="details">
-              <div class="tiempo">
-                <i class="material-icons">alarm</i>
-                <h3>20 mins</h3>
+              <div class="details">
+                <div class="tiempo">
+                  <i class="material-icons">alarm</i>
+                  <h3>20 mins</h3>
+                </div>
+                <div class="precio">
+                  <i class="material-icons">attach_money</i>
+                  <h3>200</h3>
+                </div>
+                <div class="agenda">
+                  <button name="agendar-cita" role="button" class="btn btn-sm btn-success">Agendar una cita</button>
+                </div>
               </div>
-              <div class="precio">
-                <i class="material-icons">attach_money</i>
-                <h3>200</h3>
+            </li>
+          </ul>
+        </div>
+        <div class="servicio-wrapper">
+          <h1>Limpieza</h1>
+          <ul>
+            <li class="sv">
+              <div class="sv-img">
+                <img srcset="assets/img/face.jpg 300w"
+                     sizes="5vw"
+                     alt="">
               </div>
-              <div class="agenda">
-                <button name="agendar-cita" role="button" class="btn btn-sm btn-success">Agendar una cita</button>
+              <div class="sv-des">
+                <div class="des">
+                  <h2>Control de grasa</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a sollicitudin lorem. Proin ex sem, porttitor sed feugiat in, cursus ut mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
-
+              <div class="details">
+                <div class="tiempo">
+                  <i class="material-icons">alarm</i>
+                  <h3>20 mins</h3>
+                </div>
+                <div class="precio">
+                  <i class="material-icons">attach_money</i>
+                  <h3>200</h3>
+                </div>
+                <div class="agenda">
+                  <button name="agendar-cita" role="button" class="btn btn-sm btn-success">Agendar una cita</button>
+                </div>
+              </div>
+            </li>
+            <li class="sv reverso">
+              <div class="sv-img">
+                <img srcset="assets/img/face.jpg 300w"
+                     sizes="5vw"
+                     alt="">
+              </div>
+              <div class="sv-des">
+                <div class="des">
+                  <h2>Control de grasa</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a sollicitudin lorem. Proin ex sem, porttitor sed feugiat in, cursus ut mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                </div>
+              </div>
+              <div class="details">
+                <div class="tiempo">
+                  <i class="material-icons">alarm</i>
+                  <h3>20 mins</h3>
+                </div>
+                <div class="precio">
+                  <i class="material-icons">attach_money</i>
+                  <h3>200</h3>
+                </div>
+                <div class="agenda">
+                  <button name="agendar-cita" role="button" class="btn btn-sm btn-success">Agendar una cita</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
 

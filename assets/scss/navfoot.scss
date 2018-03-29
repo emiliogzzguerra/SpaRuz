@@ -175,6 +175,9 @@ footer {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+  header{
+    margin-bottom:0;
+  }
   .navbar {
     display: flex;
     flex-direction: row;
@@ -200,9 +203,44 @@ footer {
   .main-menu {
     display: flex;
     flex-direction: row;
-    //flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 1em;
+    padding: 1em 0;
+    line-height: 2em;
+  }
+
+  .main-menu > *{
+    position: relative;
+  	overflow: hidden;
+  }
+
+  .opcion-nav{
+    a{
+      color: black;
+    }
+    a, a:hover, a:active, a:visited, a:focus {
+      text-decoration:none;
+    }
+    &.active{
+      a{
+        font-weight: bold;
+      }
+    }
+    &.active:before{
+        content: "";
+      	position: absolute;
+      	width: 200%;
+      	height: 200%;
+      	top: -50%;
+      	left: -50%;
+      	z-index: -1;
+        background-image: url("../img/selection.png");
+        opacity: 0.5;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: 50px 30px;
+        transform: rotate(-30deg);
+    }
   }
 
   .main-menu > * {
@@ -211,40 +249,64 @@ footer {
     text-align: center;
   }
 
-  .menu{
+  .logo-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
     img{
-      width: 60%;
+      width: 33%;
       height: 30%;
     }
+    width: 100%;
+    background-color: white;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .menu{
-    img{
-      width: 40%;
-      height: 30%;
+  .main-menu{
+    padding: 0 2em;
+    padding-bottom: 1em;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .opcion-nav{
+    margin: 0 0.2em;
+    line-height: 2em;
+    &.active{
+      a{
+        z-index: 2;
+      }
+    }
+
+    &.active:before{
+      	z-index: 1;
     }
   }
+
+  .logo-wrapper{
+    width: 100%;
+    background-color: white;
+  }
   footer {
-    width: 80%;
+    width: 100%;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .menu{
+  .logo-wrapper{
     img{
       width: 30%;
       height: 30%;
     }
+    width: 100%;
+    background-color: white;
   }
 
   .main-menu {
-    width: 80%;
+    width: 100%;
   }
 }
 
