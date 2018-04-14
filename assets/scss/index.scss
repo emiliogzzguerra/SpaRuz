@@ -1,0 +1,159 @@
+@import "variables";
+@import "bootstrap";
+
+.promos{
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex:1;
+}
+
+.promo {
+  width: 100%;
+  &.principal{
+
+  }
+  &.secundaria{
+    display:flex;
+    flex-direction: row;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.secundaria-uno,
+.secundaria-dos{
+  width: 100%;
+  height: 100%;
+}
+
+
+.nuestras-especialidades{
+  background-color: $white;
+  text-align: center;
+  h1 {
+    margin-top:1em;
+    margin-bottom:1em;
+    font-size: 1.5em;
+  }
+  height: 700px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex:1;
+}
+
+
+.especialidades{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.especialidad {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  h2 {
+    font-size: 1em;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+  }
+  width: 45%;
+  height: 30%;
+  background-color: $white;
+  &.facial {
+    background-image: url("http://via.placeholder.com/300x300");
+    background-position: 50% 50%;
+  }
+  &.corporal {
+    background-image: url("http://via.placeholder.com/300x300");
+    background-position: 50% 50%;
+  }
+  &.alternativo {
+    background-image: url("http://via.placeholder.com/300x300");
+    background-position: 50% 50%;
+  }
+  &.terapia {
+    background-image: url("http://via.placeholder.com/300x300");
+    background-position: 50% 50%;
+  }
+  &.ofertas {
+    background-image: url("http://via.placeholder.com/300x300");
+    background-position: 50% 50%;
+  }
+}
+
+
+.titulo-especialidad {
+  background-color: $white;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .promos{
+    flex-direction: row;
+    flex:1;
+  }
+
+  .promo {
+    &.secundaria{
+      flex-direction: column;
+      width: 43%;
+    }
+  }
+
+  .secundaria-uno,
+  .secundaria-dos{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.map{
+  height: 300px;
+  display:flex;
+  flex-direction: column;
+  flex:1;
+}
+
+footer{
+  display:flex;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .servicios-contenido-desktop > *{
+    margin-top: 1em;
+  }
+
+    .map{
+      z-index: 100;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .especialidades :nth-child(4) { margin-right: -4em}
+  .especialidades :nth-child(5) { margin-left: -4em}
+  .especialidades{
+    width: 90%;
+    justify-content: space-around;
+  }
+  .especialidad {
+    width: 30%;
+    height: 45%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}

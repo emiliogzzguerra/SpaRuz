@@ -5987,243 +5987,112 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
-.titulo_servicio {
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 1em; }
+.promos {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex: 1; }
 
-.servicios {
-  margin-bottom: 1em;
+.promo {
+  width: 100%; }
+  .promo.secundaria {
+    display: flex;
+    flex-direction: row; }
+  .promo img {
+    width: 100%;
+    height: 100%; }
+
+.secundaria-uno,
+.secundaria-dos {
+  width: 100%;
+  height: 100%; }
+
+.nuestras-especialidades {
+  background-color: #fff;
+  text-align: center;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1; }
+  .nuestras-especialidades h1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.5em; }
+
+.especialidades {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 100%;
-  text-align: center; }
-  .servicios h1 {
-    margin-bottom: 0.5em; }
+  height: 100%; }
 
-.servicio {
+.especialidad {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   width: 45%;
-  height: 50%;
-  margin-bottom: 0.5em; }
-  .servicio h2 {
+  height: 30%;
+  background-color: #fff; }
+  .especialidad h2 {
     font-size: 1em;
-    margin-top: 0.5em;
-    background-color: #fff; }
-  .servicio img {
-    max-height: 200px;
-    max-width: 200px;
-    height: 100%;
-    width: 100%; }
+    margin-top: 0.3em;
+    margin-bottom: 0.5em; }
+  .especialidad.facial {
+    background-image: url("http://via.placeholder.com/300x300");
+    background-position: 50% 50%; }
+  .especialidad.corporal {
+    background-image: url("http://via.placeholder.com/300x300");
+    background-position: 50% 50%; }
+  .especialidad.alternativo {
+    background-image: url("http://via.placeholder.com/300x300");
+    background-position: 50% 50%; }
+  .especialidad.terapia {
+    background-image: url("http://via.placeholder.com/300x300");
+    background-position: 50% 50%; }
+  .especialidad.ofertas {
+    background-image: url("http://via.placeholder.com/300x300");
+    background-position: 50% 50%; }
 
-.subdivision h2 {
-  margin-top: 0.5em;
-  margin-left: 0.5em; }
-
-#accordion ul {
-  padding-left: 0; }
-
-.card {
-  margin: 0.5em 1em; }
-
-.card-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1rem; }
-  .card-header .arrow {
-    font-size: 2em !important; }
-  .card-header h4 {
-    margin-bottom: 0; }
-
-.down {
-  -ms-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg); }
-
-.tratamiento {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1em 1em; }
-  .tratamiento h5 {
-    margin-top: 1em; }
-  .tratamiento img {
-    box-sizing: border-box;
-    width: 100%; }
-
-.detalles {
-  margin: 1em 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center; }
-
-.divide-servicios {
-  margin: 0 1em;
-  border-top: 1px solid #000000; }
+.titulo-especialidad {
+  background-color: #fff; }
 
 @media (min-width: 576px) {
-  .titulo_servicio {
-    margin-top: 1em; }
-  .servicio {
-    display: flex;
+  .promos {
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 45%;
-    margin-bottom: 0.5em; }
-    .servicio h2 {
-      font-size: 1em;
-      margin-top: 0.5em;
-      background-color: #fff; } }
+    flex: 1; }
+  .promo.secundaria {
+    flex-direction: column;
+    width: 43%; }
+  .secundaria-uno,
+  .secundaria-dos {
+    width: 100%;
+    height: 100%; } }
+
+.map {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex: 1; }
+
+footer {
+  display: flex; }
 
 @media (min-width: 768px) {
-  .titulo_servicio {
-    margin-top: 0.5em;
-    margin-bottom: 0;
-    padding: 0.5em 0; }
-  .titulo_servicio,
-  .servicios,
-  .servicio-wrapper {
-    background-color: white; }
-    .titulo_servicio ul,
-    .servicios ul,
-    .servicio-wrapper ul {
-      margin: 0;
-      padding-bottom: 1px; }
-  .servicio-wrapper {
+  .servicios-contenido-desktop > * {
     margin-top: 1em; }
-  .servicio-wrapper h1 {
-    margin-left: 0.6em;
-    padding-top: 0.4em; }
-  .servicio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 45%;
-    margin-bottom: 0.5em; }
-    .servicio h2 {
-      font-size: 1em;
-      margin-top: 0.5em;
-      background-color: #fff; }
-  .sv {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 1em 1em;
-    padding-bottom: 0;
-    margin: 20px 20px;
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray; }
-    .sv.reverso {
-      flex-direction: row-reverse; }
-      .sv.reverso .details :nth-child(1) {
-        order: 2; }
-      .sv.reverso .details :nth-child(2) {
-        order: 3; }
-      .sv.reverso .details :nth-child(3) {
-        order: 1; }
-      .sv.reverso .details {
-        justify-content: flex-start; }
-        .sv.reverso .details .agenda {
-          margin-right: 1em; }
-        .sv.reverso .details .tiempo {
-          margin-right: 1em; }
-      .sv.reverso .des {
-        margin-left: 0; }
-  .sv-img {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 18%; }
-    .sv-img img {
-      min-height: 100px;
-      border-radius: 20px; }
-    .sv-img h2 {
-      text-align: center;
-      font-size: 1.2em; }
-  .sv-des {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-right: 10px; }
-  .des {
-    margin-left: 1em;
-    height: 50%; }
-    .des h2 {
-      font-size: 1.5em; }
-    .des p {
-      margin: 0; }
-  .details {
-    margin-top: 0.5em;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-bottom: 1em;
-    width: 100%; }
-    .details i {
-      font-size: 1.5em; }
-    .details h3 {
-      font-size: 1.2em;
-      margin: 0; }
-    .details .precio {
-      margin-right: 1em; }
-    .details .tiempo {
-      margin-right: 1em; }
-  .tiempo {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-    .tiempo i {
-      margin-right: 0.2em; }
-  .precio {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-  .agenda {
-    display: flex;
-    flex-direction: row;
-    align-items: center; } }
+  .map {
+    z-index: 100; } }
 
 @media (min-width: 992px) {
-  .servicios {
+  .especialidades :nth-child(4) {
+    margin-right: -4em; }
+  .especialidades :nth-child(5) {
+    margin-left: -4em; }
+  .especialidades {
+    width: 90%;
     justify-content: space-around; }
-  .servicios :nth-child(4) {
-    margin-right: -6em; }
-  .servicios :nth-child(5) {
-    margin-left: -6em; }
-  .servicio {
-    width: 33%; }
-    .servicio img {
-      height: 80%;
-      width: 80%; }
-  .des p {
-    font-size: 1.1em; }
-  .details {
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-bottom: 1em; }
-    .details .precio {
-      margin-right: 1em; }
-    .details .tiempo {
-      margin-right: 1em; }
-    .details i {
-      font-size: 1.5em; }
-    .details h3 {
-      font-size: 1.5em;
-      margin: 0; } }
+  .especialidad {
+    width: 30%;
+    height: 45%; } }

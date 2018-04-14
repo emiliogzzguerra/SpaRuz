@@ -1,4 +1,4 @@
-if($(window).width() > 768){
+if($(window).width() >= 768){
   $(".servicios-contenido-movil").hide();
 } else {
   $(".servicios-contenido-desktop").hide();
@@ -15,7 +15,13 @@ $('.subdivision').click(function(e){
 });
 
 $(".card").click(function(){
-    $(this).find("i").toggleClass("down");
+    if ($(this).find('.top-five').attr("aria-expanded") == true) {
+          $(this).attr("aria-expanded", false);
+          $(this).find("i").toggleClass("down");
+     } else {
+          $(this).find("i").toggleClass("down");
+          $(this).attr("aria-expanded", true);
+     }
 });
 
 $(window).resize(function(event) {

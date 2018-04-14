@@ -35,11 +35,6 @@
   font-feature-settings: 'liga';
 }
 
-
-header{
-  margin-bottom:3.4em;
-}
-
 section {
   width: 100%;
   display: flex;
@@ -62,6 +57,12 @@ section {
   height: 32px;
 }
 
+.nav {
+  display: flex !important;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+  list-style: none !important; }
+
 .navbar {
   left: 0;
   position: fixed;
@@ -75,7 +76,6 @@ section {
     -webkit-transform: translate(0,-60px);
     -webkit-transition: -webkit-transform .2s,background .3s,color .3s,opacity 0 .3s;
   }
-
   &.is-visible {
     opacity: 1;
     -webkit-transform: translate(0,0);
@@ -147,24 +147,24 @@ footer {
 
 .socicons{
   display:flex;
-  margin-left: 0.3em;
-  margin-right: -0.8em;
-  flex:1;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 20%;
+  align-items: center;
 }
 
 .whatsapp{
   display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
-
-  img {
-    display:border-box;
-    width: 2em;
-    height: 2em;
-    margin: 0.5em 0.5em;
+  flex-direction: row;
+  img{
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    width: 2.3em;
+    height: 2.3em;
   }
+  width: 80%;
 }
 
 .logo-footer{
@@ -175,14 +175,20 @@ footer {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  header{
-    margin-bottom:0;
+  nav{
+    display: none !important;
   }
+
   .navbar {
+    display: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 0px 16px;
+  }
+
+  .spalogomenu{
+    width: 40%;
   }
 
   .menu {
@@ -209,9 +215,15 @@ footer {
     line-height: 2em;
   }
 
+  .logo-menu{
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
   .main-menu > *{
     position: relative;
   	overflow: hidden;
+    margin: 0 0.5em;
   }
 
   .opcion-nav{
@@ -253,23 +265,44 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    img{
-      width: 33%;
+    .logo-top{
+      width: 50%;
+      height: 40%;
+    }
+    .side{
+      width: 25%;
       height: 30%;
     }
     width: 100%;
     background-color: white;
   }
+
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/wood.jpg");
+    background-size: 400px 400px;
+     background-attachment: fixed;
+    background-repeat: repeat;
+
+  }
+  main{
+      width: 80%;
+      height: 100%;
+  }
+
   .main-menu{
     padding: 0 2em;
     padding-bottom: 1em;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    background-color: white;
   }
   .opcion-nav{
     margin: 0 0.2em;
@@ -286,9 +319,18 @@ footer {
   }
 
   .logo-wrapper{
+    .logo-top{
+      width: 50%;
+      height: 40%;
+    }
+    .side{
+      width: 25%;
+      height: 30%;
+    }
     width: 100%;
     background-color: white;
   }
+
   footer {
     width: 100%;
   }
@@ -297,8 +339,12 @@ footer {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .logo-wrapper{
-    img{
-      width: 30%;
+    .logo-top{
+      width: 50%;
+      height: 40%;
+    }
+    .side{
+      width: 25%;
       height: 30%;
     }
     width: 100%;
@@ -312,5 +358,14 @@ footer {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
+  .logo-wrapper{
+    .logo-top{
+      width: 35%;
+    }
+    .side{
+      width: 22%;
+    }
+    width: 100%;
+    background-color: white;
+  }
 }

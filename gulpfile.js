@@ -15,7 +15,8 @@ gulp.task('sass', function() {
     .pipe(sass({
         includePaths: [config.bootstrapDir + '/scss'],
     }))
-    .pipe(gulp.dest(config.assetsDir + '/css'));
+    .pipe(gulp.dest(config.assetsDir + '/css'))
+    .pipe(browserSync.stream());;
 });
 
 // Move css files to our directory
@@ -44,7 +45,7 @@ gulp.task('browserSync', function() {
 // Static Server + watching scss/html files
 gulp.task('serve', ['browserSync','sass'], function() {
     gulp.watch('./assets/scss/*.scss', ['sass']);
-    gulp.watch('./assets/scss/*.scss', browserSync.reload);
+    //gulp.watch('./assets/scss/*.scss', browserSync.reload);
 
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('./*.html', browserSync.reload);

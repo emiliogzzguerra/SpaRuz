@@ -28,9 +28,6 @@
   /* Support for IE. */
   font-feature-settings: 'liga'; }
 
-header {
-  margin-bottom: 3.4em; }
-
 section {
   width: 100%;
   display: flex;
@@ -47,6 +44,12 @@ section {
 
 .menuheight {
   height: 32px; }
+
+.nav {
+  display: flex !important;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+  list-style: none !important; }
 
 .navbar {
   left: 0;
@@ -111,34 +114,38 @@ footer {
 
 .socicons {
   display: flex;
-  margin-left: 0.3em;
-  margin-right: -0.8em;
-  flex: 1; }
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 20%;
+  align-items: center; }
 
 .whatsapp {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 80%; }
   .whatsapp img {
-    display: border-box;
-    width: 2em;
-    height: 2em;
-    margin: 0.5em 0.5em; }
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    width: 2.3em;
+    height: 2.3em; }
 
 .logo-footer {
   display: flex;
   flex: 0; }
 
 @media (min-width: 576px) {
-  header {
-    margin-bottom: 0; }
+  nav {
+    display: none !important; }
   .navbar {
+    display: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 0px 16px; }
+  .spalogomenu {
+    width: 40%; }
   .menu {
     display: flex;
     flex-direction: column;
@@ -155,9 +162,13 @@ footer {
     justify-content: space-around;
     padding: 1em 0;
     line-height: 2em; }
+  .logo-menu {
+    padding-left: 1em;
+    padding-right: 1em; }
   .main-menu > * {
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 0 0.5em; }
   .opcion-nav a {
     color: black; }
   .opcion-nav a, .opcion-nav a:hover, .opcion-nav a:active, .opcion-nav a:visited, .opcion-nav a:focus {
@@ -188,17 +199,32 @@ footer {
     align-items: flex-start;
     width: 100%;
     background-color: white; }
-    .logo-wrapper img {
-      width: 33%;
+    .logo-wrapper .logo-top {
+      width: 50%;
+      height: 40%; }
+    .logo-wrapper .side {
+      width: 25%;
       height: 30%; } }
 
 @media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/wood.jpg");
+    background-size: 400px 400px;
+    background-attachment: fixed;
+    background-repeat: repeat; }
+  main {
+    width: 80%;
+    height: 100%; }
   .main-menu {
     padding: 0 2em;
     padding-bottom: 1em;
     justify-content: space-around;
     align-items: center;
-    width: 100%; }
+    width: 100%;
+    background-color: white; }
   .opcion-nav {
     margin: 0 0.2em;
     line-height: 2em; }
@@ -209,6 +235,12 @@ footer {
   .logo-wrapper {
     width: 100%;
     background-color: white; }
+    .logo-wrapper .logo-top {
+      width: 50%;
+      height: 40%; }
+    .logo-wrapper .side {
+      width: 25%;
+      height: 30%; }
   footer {
     width: 100%; } }
 
@@ -216,8 +248,20 @@ footer {
   .logo-wrapper {
     width: 100%;
     background-color: white; }
-    .logo-wrapper img {
-      width: 30%;
+    .logo-wrapper .logo-top {
+      width: 50%;
+      height: 40%; }
+    .logo-wrapper .side {
+      width: 25%;
       height: 30%; }
   .main-menu {
     width: 100%; } }
+
+@media (min-width: 1200px) {
+  .logo-wrapper {
+    width: 100%;
+    background-color: white; }
+    .logo-wrapper .logo-top {
+      width: 35%; }
+    .logo-wrapper .side {
+      width: 22%; } }
